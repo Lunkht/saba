@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mode Femmes - Saba Planet</title>
+    <link rel="stylesheet" href="../css/main.css">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <nav class="navbar">
+            <div class="nav-container">
+                <div class="logo">
+                    <h1><a href="../index.html">Saba Planet</a></h1>
+                </div>
+                <ul class="nav-menu">
+                    <li><a href="../index.html#home">Accueil</a></li>
+                    <li><a href="../index.html#products">Produits</a></li>
+                    <li><a href="hommes.html">Hommes</a></li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle">Femmes <span class="dropdown-icon">▼</span></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="#" data-filter="fashion" data-subcategory="femmes" data-type="chaussures">Chaussures</a></li>
+                            <li><a href="#" data-filter="fashion" data-subcategory="femmes" data-type="tshirts">T-shirts</a></li>
+                            <li><a href="#" data-filter="fashion" data-subcategory="femmes" data-type="chemises">Chemises</a></li>
+                            <li><a href="#" data-filter="fashion" data-subcategory="femmes" data-type="pantalons">Pantalons</a></li>
+                            <li><a href="#" data-filter="fashion" data-subcategory="femmes" data-type="robes">Robes</a></li>
+                            <li><a href="#" data-filter="fashion" data-subcategory="femmes" data-type="accessoires">Accessoires</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="enfants.html">Enfants</a></li>
+                    <li><a href="../index.html#about">À propos</a></li>
+                    <li><a href="../index.html#contact">Contact</a></li>
+                </ul>
+                <div class="cart-icon">
+                    <span id="cart-count">0</span>
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                        <path d="M3 3H5L5.4 5M7 13H17L21 5H5.4M7 13L5.4 5M7 13L4.7 15.3C4.3 15.7 4.6 16.5 5.1 16.5H17M17 13V17C17 18.1 16.1 19 15 19H9C7.9 19 7 18.1 7 17V13M17 13H7" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                    </svg>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Women's Products Section -->
+    <section class="products women-products">
+        <div class="container">
+            <div class="breadcrumb">
+                <a href="../index.html">Accueil</a> &gt; 
+                <span>Mode Femmes</span>
+            </div>
+            
+            <h2>Mode Femmes</h2>
+            
+            <div class="filter-buttons">
+                <button class="filter-btn active" data-filter="fashion" data-subcategory="femmes">Tous</button>
+                <button class="filter-btn" data-filter="fashion" data-subcategory="femmes" data-type="chaussures">Chaussures</button>
+                <button class="filter-btn" data-filter="fashion" data-subcategory="femmes" data-type="tshirts">T-shirts</button>
+                <button class="filter-btn" data-filter="fashion" data-subcategory="femmes" data-type="chemises">Chemises</button>
+                <button class="filter-btn" data-filter="fashion" data-subcategory="femmes" data-type="pantalons">Pantalons</button>
+                <button class="filter-btn" data-filter="fashion" data-subcategory="femmes" data-type="robes">Robes</button>
+                <button class="filter-btn" data-filter="fashion" data-subcategory="femmes" data-type="accessoires">Accessoires</button>
+            </div>
+            
+            <div class="products-grid" id="products-grid">
+                <!-- Products will be dynamically loaded here -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Saba Planet</h3>
+                    <p>Votre boutique en ligne de confiance</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Liens rapides</h4>
+                    <ul>
+                        <li><a href="../index.html#home">Accueil</a></li>
+                        <li><a href="../index.html#products">Produits</a></li>
+                        <li><a href="../index.html#about">À propos</a></li>
+                        <li><a href="../index.html#contact">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Suivez-nous</h4>
+                    <div class="social-links">
+                        <a href="#">Facebook</a>
+                        <a href="#">Instagram</a>
+                        <a href="#">Twitter</a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Saba Planet. Tous droits réservés.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Cart Modal -->
+    <div id="cart-modal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Votre Panier</h2>
+            <div id="cart-items"></div>
+            <div class="cart-total">
+                <h3>Total: <span id="cart-total">0€</span></h3>
+                <button class="checkout-btn">Commander</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="../js/script.js"></script>
+    <script src="../js/femmes.js"></script>
+</body>
+</html>
