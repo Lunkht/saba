@@ -198,10 +198,21 @@ const products = [
         type: "accessoires",
         price: 499,
         description: "Ceinture en cuir de qualité pour homme",
-        image: "./images/NewDenBer Men's Moccasin Slippers Warm Memory Foam Suede Soft Plush Lined Slip on Indoor Outdoor House Shoes.jpeg"
+        image: "./images/pantalon-kaki.jpg"
     },
     {
         id: 21,
+        name: "Short à effet taches de peinture",
+        category: "fashion",
+        subcategory: "hommes",
+        type: "shorts",
+        price: 450,
+        brand: "DSQUARED2",
+        description: "Short en denim avec effet taches de peinture signature DSQUARED2. Coupe moderne et confortable, parfait pour un look décontracté urbain.",
+        image: "./images/dsquared2-short.svg"
+    },
+    {
+        id: 22,
         name: "Montre Élégante",
         category: "fashion",
         subcategory: "hommes",
@@ -211,7 +222,7 @@ const products = [
         image: "./images/pantalon-jeans1.jpg"
     },
     {
-        id: 22,
+        id: 23,
         name: "Collier Perles",
         category: "fashion",
         subcategory: "femmes",
@@ -221,7 +232,7 @@ const products = [
         image: "./images/pantalon-jeans2.jpg"
     },
     {
-        id: 23,
+        id: 24,
         name: "Lunettes de Soleil",
         category: "fashion",
         subcategory: "hommes",
@@ -231,7 +242,7 @@ const products = [
         image: "./images/pantalon-kaki.jpg"
     },
     {
-        id: 24,
+        id: 25,
         name: "Écharpe Laine",
         category: "fashion",
         subcategory: "femmes",
@@ -241,7 +252,7 @@ const products = [
         image: "./images/robe-gris.jpg"
     },
     {
-        id: 25,
+        id: 26,
         name: "Portefeuille Cuir",
         category: "fashion",
         subcategory: "hommes",

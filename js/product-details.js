@@ -42,6 +42,23 @@ function loadProductDetails() {
         this.onerror = null;
     };
     
+    // Set thumbnail images
+    const thumb1 = document.getElementById('thumb-1');
+    const thumb2 = document.getElementById('thumb-2');
+    thumb1.src = `../${product.image}`;
+    thumb2.src = `../${product.image}`;
+    thumb1.onerror = function() {
+        this.src = '../images/fond-hero.jpg';
+        this.onerror = null;
+    };
+    thumb2.onerror = function() {
+        this.src = '../images/fond-hero.jpg';
+        this.onerror = null;
+    };
+    
+    // Setup thumbnail gallery
+    setupThumbnailGallery();
+    
     // Add event listener to the Add to Cart button
     document.getElementById('add-to-cart-btn').addEventListener('click', () => {
         addToCart(productId);
@@ -109,7 +126,8 @@ function loadRelatedProducts(currentProduct) {
 // Initialize the page
 document.addEventListener('DOMContentLoaded', function() {
     loadProductDetails();
-    setupEventListeners();
+    setupWishlistButton();
+    setupSizeSelector();
     
     // Setup cart modal functionality
     const cartIcon = document.querySelector('.cart-icon');
@@ -134,3 +152,54 @@ document.addEventListener('DOMContentLoaded', function() {
     // Update cart count
     updateCartCount();
 });
+
+// Setup thumbnail gallery functionality
+function setupThumbnailGallery() {
+    const thumbnails = document.querySelectorAll('.thumbnail');
+    const mainImage = document.getElementById('product-main-image');
+    
+    thumbnails.forEach((thumbnail, index) => {
+        thumbnail.addEventListener('click', () => {
+            // Remove active class from all thumbnails
+            thumbnails.forEach(thumb => thumb.classList.remove('active'));
+            // Add active class to clicked thumbnail
+            thumbnail.classList.add('active');
+            
+            // Update main image
+            const thumbImg = thumbnail.querySelector('img');
+            mainImage.src = thumbImg.src;
+        });
+    });
+}
+
+// Setup wishlist button functionality
+function setupWishlistButton() {
+    const wishlistBtn = document.getElementById('wishlist-btn');
+    if (wishlistBtn) {
+        wishlistBtn.addEventListener('click', () => {
+            const productId = getProductIdFromUrl();
+            addToCart(productId);
+            showNotification('Produit ajouté à la wishlist!');
+        });
+    }
+}
+
+// Setup size selector functionality
+function setupSizeSelector() {
+    const sizeSelect = document.getElementById('size-select');
+    const addToCartBtn = document.getElementById('add-to-cart-btn');
+    
+    if (sizeSelect && addToCartBtn) {
+        // Initially disable add to cart if no size selected
+        addToCartBtn.disabled = !sizeSelect.value;
+        
+        sizeSelect.addEventListener('change', () => {
+            addToCartBtn.disabled = !sizeSelect.value;
+            if (sizeSelect.value) {
+                addToCartBtn.textContent = 'Ajouter au panier';
+            } else {
+                addToCartBtn.textContent = 'Sélectionner une taille';
+            }
+        });
+    }
+}
