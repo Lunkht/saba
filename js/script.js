@@ -8,7 +8,8 @@ const products = [
         type: "pantalons",
         price: 899,
         description: "Pantalon jeans gris de qualité supérieure",
-        image: "./images/pantalon-jeans1.jpg"
+        image: "./images/pantalon-jeans1.jpg",
+        images: ["./images/pantalon-jeans1.jpg", "./images/pantalon-jeans2.jpg"]
     },
     {
         id: 2,
@@ -18,7 +19,8 @@ const products = [
         type: "pantalons",
         price: 799,
         description: "Pantalon jeans bleu confortable et stylé",
-        image: "./images/pantalon-jeans2.jpg"
+        image: "./images/pantalon-jeans2.jpg",
+        images: ["./images/pantalon-jeans2.jpg", "./images/pantalon-kaki.jpg"]
     },
     {
         id: 3,
@@ -28,7 +30,8 @@ const products = [
         type: "pantalons",
         price: 699,
         description: "Pantalon kaki élégant pour toutes occasions",
-        image: "./images/pantalon-kaki.jpg"
+        image: "./images/pantalon-kaki.jpg",
+        images: ["./images/pantalon-kaki.jpg", "./images/pantalon3.jpeg"]
     },
     {
         id: 4,
@@ -38,7 +41,8 @@ const products = [
         type: "robes",
         price: 1299,
         description: "Robe grise élégante pour soirées",
-        image: "./images/robe-gris.jpg"
+        image: "./images/robe-gris.jpg",
+        images: ["./images/robe-gris.jpg", "./images/pantalon3.jpeg"]
     },
     {
         id: 5,
@@ -48,7 +52,8 @@ const products = [
         type: "pantalons",
         price: 899,
         description: "Pantalon casual pour un style décontracté",
-        image: "./images/pantalon3.jpeg"
+        image: "./images/pantalon3.jpeg",
+        images: ["./images/pantalon3.jpeg", "./images/robe-gris.jpg"]
     },
     {
         id: 6,
@@ -58,7 +63,8 @@ const products = [
         type: "chaussures",
         price: 1299,
         description: "Chaussures en cuir noir élégantes",
-        image: "./images/chaussur-cur-noir.jpeg"
+        image: "./images/chaussur-cur-noir.jpeg",
+        images: ["./images/chaussur-cur-noir.jpeg", "./images/Shoes _ Closed.jpeg"]
     },
     {
         id: 7,
@@ -68,7 +74,8 @@ const products = [
         type: "chaussures",
         price: 499,
         description: "Pantoufles d'été respirantes pour hommes",
-        image: "./images/Pantoufles d'été respirantes pour hommes, pantoufles d'intérieur à fond épais, à la mode, 2024.jpeg"
+        image: "./images/Pantoufles d'été respirantes pour hommes, pantoufles d'intérieur à fond épais, à la mode, 2024.jpeg",
+        images: ["./images/Pantoufles d'été respirantes pour hommes, pantoufles d'intérieur à fond épais, à la mode, 2024.jpeg", "./images/Sandales d'intérieur mode homme, sandales noires confortables à semelle épaisse en matériau EVA, antidérapantes, anti-odeurs et antibactériennes pour l'intérieur et l'extérieur (il est recommandé d'acheter une taille au-dessus pou.jpeg"]
     },
     {
         id: 8,
@@ -78,7 +85,8 @@ const products = [
         type: "chaussures",
         price: 599,
         description: "Pantoufles Moccasin confortables pour la maison",
-        image: "./images/NewDenBer Men's Moccasin Slippers Warm Memory Foam Suede Soft Plush Lined Slip on Indoor Outdoor House Shoes.jpeg"
+        image: "./images/NewDenBer Men's Moccasin Slippers Warm Memory Foam Suede Soft Plush Lined Slip on Indoor Outdoor House Shoes.jpeg",
+        images: ["./images/NewDenBer Men's Moccasin Slippers Warm Memory Foam Suede Soft Plush Lined Slip on Indoor Outdoor House Shoes.jpeg", "./images/Luxury Pam Slippers _Available to order _#homeofstylishandstatementpieces #menshoes #menslippersinlagos #mensfashion #creatorsearchinsights #eid2025.jpeg"]
     },
     {
         id: 9,
@@ -88,7 +96,8 @@ const products = [
         type: "chaussures",
         price: 699,
         description: "Sandales plateforme antidérapantes pour l'été",
-        image: "./images/Herren Hausschuhe Sommer rutschfeste lässige Sandalen Plattform Hausschuhe Indoor Badezimmer.jpeg"
+        image: "./images/Herren Hausschuhe Sommer rutschfeste lässige Sandalen Plattform Hausschuhe Indoor Badezimmer.jpeg",
+        images: ["./images/Herren Hausschuhe Sommer rutschfeste lässige Sandalen Plattform Hausschuhe Indoor Badezimmer.jpeg", "./images/Shoes _ Closed.jpeg"]
     },
     {
         id: 10,
@@ -98,7 +107,8 @@ const products = [
         type: "chaussures",
         price: 999,
         description: "Pantoufles de luxe pour hommes",
-        image: "./images/Luxury Pam Slippers _Available to order _#homeofstylishandstatementpieces #menshoes #menslippersinlagos #mensfashion #creatorsearchinsights #eid2025.jpeg"
+        image: "./images/Luxury Pam Slippers _Available to order _#homeofstylishandstatementpieces #menshoes #menslippersinlagos #mensfashion #creatorsearchinsights #eid2025.jpeg",
+        images: ["./images/Luxury Pam Slippers _Available to order _#homeofstylishandstatementpieces #menshoes #menslippersinlagos #mensfashion #creatorsearchinsights #eid2025.jpeg", "./images/NewDenBer Men's Moccasin Slippers Warm Memory Foam Suede Soft Plush Lined Slip on Indoor Outdoor House Shoes.jpeg"]
     },
     {
         id: 11,
@@ -209,7 +219,8 @@ const products = [
         price: 450,
         brand: "DSQUARED2",
         description: "Short en denim avec effet taches de peinture signature DSQUARED2. Coupe moderne et confortable, parfait pour un look décontracté urbain.",
-        image: "./images/dsquared2-short.svg"
+        image: "./images/dsquared2-short.svg",
+        images: ["./images/dsquared2-short.svg", "./images/pantalon-jeans1.jpg"]
     },
     {
         id: 22,

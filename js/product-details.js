@@ -35,18 +35,19 @@ function loadProductDetails() {
     
     // Set product image
     const productImage = document.getElementById('product-main-image');
-    productImage.src = `../${product.image}`;
+    const productImages = product.images || [product.image, product.image];
+    productImage.src = `../${productImages[0]}`;
     productImage.alt = product.name;
     productImage.onerror = function() {
         this.src = '../images/fond-hero.jpg';
         this.onerror = null;
     };
     
-    // Set thumbnail images
+    // Set thumbnail images with different images for comparison
     const thumb1 = document.getElementById('thumb-1');
     const thumb2 = document.getElementById('thumb-2');
-    thumb1.src = `../${product.image}`;
-    thumb2.src = `../${product.image}`;
+    thumb1.src = `../${productImages[0]}`;
+    thumb2.src = `../${productImages[1] || productImages[0]}`;
     thumb1.onerror = function() {
         this.src = '../images/fond-hero.jpg';
         this.onerror = null;
@@ -55,6 +56,9 @@ function loadProductDetails() {
         this.src = '../images/fond-hero.jpg';
         this.onerror = null;
     };
+    
+    // Store images data for gallery functionality
+    productImage.dataset.images = JSON.stringify(productImages);
     
     // Setup thumbnail gallery
     setupThumbnailGallery();
@@ -157,6 +161,7 @@ document.addEventListener('DOMContentLoaded', function() {
 function setupThumbnailGallery() {
     const thumbnails = document.querySelectorAll('.thumbnail');
     const mainImage = document.getElementById('product-main-image');
+    const productImages = JSON.parse(mainImage.dataset.images || '[]');
     
     thumbnails.forEach((thumbnail, index) => {
         thumbnail.addEventListener('click', () => {
@@ -165,11 +170,21 @@ function setupThumbnailGallery() {
             // Add active class to clicked thumbnail
             thumbnail.classList.add('active');
             
-            // Update main image
-            const thumbImg = thumbnail.querySelector('img');
-            mainImage.src = thumbImg.src;
+            // Update main image with the corresponding product image
+            if (productImages[index]) {
+                mainImage.src = `../${productImages[index]}`;
+                mainImage.onerror = function() {
+                    this.src = '../images/fond-hero.jpg';
+                    this.onerror = null;
+                };
+            }
         });
     });
+    
+    // Set first thumbnail as active by default
+    if (thumbnails.length > 0) {
+        thumbnails[0].classList.add('active');
+    }
 }
 
 // Setup wishlist button functionality
