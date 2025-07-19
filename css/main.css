@@ -1383,6 +1383,57 @@ footer {
     line-height: 1.4;
 }
 
+.contact-info {
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    margin: 25px 0;
+    border: 1px solid #e9ecef;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+}
+
+.contact-info h4 {
+    margin: 0 0 15px 0;
+    font-size: 1.1rem;
+    color: #333;
+    font-weight: 600;
+}
+
+.contact-details {
+    margin-bottom: 15px;
+}
+
+.contact-item {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 10px;
+}
+
+.contact-item svg {
+    color: #007bff;
+    flex-shrink: 0;
+}
+
+.contact-item a {
+    color: #007bff;
+    text-decoration: none;
+    font-size: 0.95rem;
+    transition: color 0.3s ease;
+}
+
+.contact-item a:hover {
+    color: #0056b3;
+    text-decoration: underline;
+}
+
+.contact-hours {
+    font-size: 0.85rem;
+    color: #666;
+    margin: 0;
+    font-style: italic;
+}
+
 .product-description {
     border-top: 1px solid #eee;
     padding-top: 2rem;
