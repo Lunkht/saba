@@ -266,20 +266,40 @@
     <!-- About Section -->
     <section id="about" class="about">
         <div class="container">
-            <h2>À propos de Saba Planet</h2>
-            <div class="about-content">
-                <div class="about-text">
-                    <p>Saba Planet est votre destination de choix pour des produits de qualité exceptionnelle. Nous nous
-                        engageons à offrir une expérience d'achat unique avec un service client irréprochable.</p>
-                    <ul>
-                        <li>Livraison rapide et sécurisée</li>
-                        <li>Garantie satisfaction</li>
-                        <li>Support client 24/7</li>
-                        <li>Produits authentiques</li>
-                    </ul>
+            <div class="about-cards">
+                <div class="about-card">
+                    <div class="card-icon">
+                        <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M9 12l2 2 4-4"/>
+                            <path d="M21 12c-1 0-3-1-3-3s2-3 3-3 3 1 3 3-2 3-3 3"/>
+                            <path d="M3 12c1 0 3-1 3-3s-2-3-3-3-3 1-3 3 2 3 3 3"/>
+                            <path d="M12 3c0 1-1 3-3 3s-3-2-3-3 1-3 3-3 3 2 3 3"/>
+                            <path d="M12 21c0-1 1-3 3-3s3 2 3 3-1 3-3 3-3-2-3-3"/>
+                        </svg>
+                    </div>
+                    <h3>PASSER COMMANDE</h3>
+                    <p>Votre guide shopping sur l'ARFETCH</p>
                 </div>
-                <div class="about-image">
-                    <div class="placeholder-image"><img src="./images/about.svg" alt="Illustration de la boutique Saba Planet" srcset=""></div>
+                
+                <div class="about-card">
+                    <div class="card-icon">
+                        <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <circle cx="12" cy="12" r="10"/>
+                            <path d="M12 6v6l4 2"/>
+                        </svg>
+                    </div>
+                    <h3>FAQ</h3>
+                    <p>Toutes nos réponses à vos questions</p>
+                </div>
+                
+                <div class="about-card">
+                    <div class="card-icon">
+                        <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/>
+                        </svg>
+                    </div>
+                    <h3>BESOIN D'AIDE ?</h3>
+                    <p>Contactez les conseillers de notre Service client</p>
                 </div>
             </div>
         </div>
@@ -288,34 +308,19 @@
     <!-- Newsletter Section -->
     <section id="newsletter" class="newsletter">
         <div class="container">
-            <h2>Restez informé</h2>
             <div class="newsletter-content">
-                <div class="newsletter-text">
-                    <h3>Abonnez-vous à notre newsletter</h3>
-                    <p>Recevez en avant-première nos dernières nouveautés, offres exclusives et conseils mode directement dans votre boîte mail.</p>
-                    <ul class="newsletter-benefits">
-                        <li>✨ Offres exclusives réservées aux abonnés</li>
-                        <li>🎯 Nouveautés en avant-première</li>
-                        <li>💡 Conseils et tendances mode</li>
-                        <li>🎁 Code promo de bienvenue</li>
-                    </ul>
-                </div>
+                <h2>Ne perdez pas le fil</h2>
+                <p class="newsletter-subtitle">Abonnez-vous pour recevoir des promotions, des sélections personnalisées, des mises à jour de stock et plus, directement dans votre boîte e-mail.</p>
+                
                 <div class="newsletter-form">
-                    <form action="https://formspree.io/f/YOUR_FORM_ID" method="POST" class="newsletter-form-container">
+                    <h3>MISES À JOUR VIA :</h3>
+                    <form class="newsletter-form-container">
                         <div class="form-group">
-                            <label for="email">Adresse e-mail</label>
-                            <input type="email" id="email" name="email" placeholder="votre@email.com" required>
+                            <label for="email">E-mail</label>
+                            <input type="email" id="email" name="email" placeholder="Votre adresse e-mail" required>
                         </div>
-                        <div class="form-group">
-                            <label for="name">Prénom (optionnel)</label>
-                            <input type="text" id="name" name="name" placeholder="Votre prénom">
-                        </div>
-                        <div class="form-group checkbox-group">
-                            <input type="checkbox" id="consent" name="consent" required>
-                            <label for="consent">J'accepte de recevoir des e-mails promotionnels de Saba Planet</label>
-                        </div>
-                        <button type="submit" class="newsletter-btn">S'abonner à la newsletter</button>
-                        <p class="newsletter-note">Vous pouvez vous désabonner à tout moment en cliquant sur le lien dans nos e-mails.</p>
+                        <button type="submit" class="newsletter-btn">S'abonner</button>
+                        <p class="newsletter-note">En vous inscrivant, vous acceptez de recevoir des offres marketing par e-mail et/ou SMS et reconnaissez avoir lu la <a href="#">Politique de confidentialité</a>. Désabonnez-vous à tout moment au bas de nos e-mails ou en répondant STOP à l'un de nos SMS.</p>
                     </form>
                 </div>
             </div>
