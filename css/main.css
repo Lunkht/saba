@@ -42,6 +42,18 @@ body {
     position: relative;
 }
 
+.logo-img {
+    height: 50px;
+    width: auto;
+    transition: all 0.3s ease;
+    filter: drop-shadow(0 2px 4px rgba(0,0,0,0.1));
+}
+
+.logo-img:hover {
+    transform: scale(1.05);
+    filter: drop-shadow(0 4px 8px rgba(255, 102, 0, 0.3));
+}
+
 .logo h1 {
     margin: 0;
     font-size: 2rem;
@@ -97,12 +109,18 @@ body {
 
 /* Logo responsive design */
 @media (max-width: 768px) {
+    .logo-img {
+        height: 40px;
+    }
     .logo h1 {
         font-size: 1.6rem;
     }
 }
 
 @media (max-width: 480px) {
+    .logo-img {
+        height: 35px;
+    }
     .logo h1 {
         font-size: 1.4rem;
     }
@@ -492,18 +510,23 @@ body {
 .about-cards {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    gap: 1px;
+    gap: 0;
     max-width: 900px;
     margin: 0 auto;
-    background-color: #ddd;
+    border: 1px solid #ddd;
 }
 
 .about-card {
     background: white;
-    padding: 50px 30px;
+    padding: 40px 25px;
     text-align: center;
     transition: transform 0.2s ease;
-    border: none;
+    border-right: 1px solid #ddd;
+    border-bottom: 0;
+}
+
+.about-card:last-child {
+    border-right: none;
 }
 
 .about-card:hover {
@@ -511,29 +534,29 @@ body {
 }
 
 .card-icon {
-    margin-bottom: 25px;
+    margin-bottom: 20px;
     color: #333;
 }
 
 .card-icon svg {
-    width: 32px;
-    height: 32px;
-    stroke-width: 1.5;
+    width: 28px;
+    height: 28px;
+    stroke-width: 1.2;
 }
 
 .about-card h3 {
-    font-size: 0.85rem;
+    font-size: 0.8rem;
     font-weight: 700;
     color: #333;
-    margin-bottom: 15px;
+    margin-bottom: 12px;
     text-transform: uppercase;
-    letter-spacing: 1.5px;
+    letter-spacing: 1.2px;
 }
 
 .about-card p {
-    font-size: 0.85rem;
+    font-size: 0.8rem;
     color: #666;
-    line-height: 1.4;
+    line-height: 1.3;
     margin: 0;
     font-weight: 400;
 }
