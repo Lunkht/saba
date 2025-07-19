@@ -8,8 +8,8 @@ const products = [
         type: "pantalons",
         price: 899,
         description: "Pantalon jeans gris de qualité supérieure",
-        image: "./images/pantalon-jeans1.jpg",
-        images: ["./images/pantalon-jeans1.jpg", "./images/pantalon-jeans2.jpg"]
+        image: "./images/hommes/pantalon_jeans_gris.png",
+        images: ["./images/hommes/pantalon_jeans_gris.png", "./images/hommes/patalon_kaki_noir.png"]
     },
     {
         id: 2,
@@ -19,8 +19,8 @@ const products = [
         type: "pantalons",
         price: 799,
         description: "Pantalon jeans bleu confortable et stylé",
-        image: "./images/pantalon-jeans2.jpg",
-        images: ["./images/pantalon-jeans2.jpg", "./images/pantalon-kaki.jpg"]
+        image: "./images/hommes/patalon_kaki_noir.png",
+        images: ["./images/hommes/patalon_kaki_noir.png", "./images/hommes/pantalon_jeans_gris.png"]
     },
     {
         id: 3,
@@ -30,8 +30,8 @@ const products = [
         type: "pantalons",
         price: 699,
         description: "Pantalon kaki élégant pour toutes occasions",
-        image: "./images/pantalon-kaki.jpg",
-        images: ["./images/pantalon-kaki.jpg", "./images/pantalon3.jpeg"]
+        image: "./images/hommes/patalon_kaki_noir.png",
+        images: ["./images/hommes/patalon_kaki_noir.png", "./images/hommes/pantalon3.jpeg"]
     },
     {
         id: 4,
@@ -41,8 +41,8 @@ const products = [
         type: "robes",
         price: 1299,
         description: "Robe grise élégante pour soirées",
-        image: "./images/robe-gris.jpg",
-        images: ["./images/robe-gris.jpg", "./images/pantalon3.jpeg"]
+        image: "./images/femmes/robe-gris.jpg",
+        images: ["./images/femmes/robe-gris.jpg", "./images/femmes/robe_noir.png"]
     },
     {
         id: 5,
@@ -52,8 +52,8 @@ const products = [
         type: "pantalons",
         price: 899,
         description: "Pantalon casual pour un style décontracté",
-        image: "./images/pantalon3.jpeg",
-        images: ["./images/pantalon3.jpeg", "./images/robe-gris.jpg"]
+        image: "./images/femmes/pantalon-jeans1.jpg",
+        images: ["./images/femmes/pantalon-jeans1.jpg", "./images/femmes/pantalon-jeans2.jpg"]
     },
     {
         id: 6,
@@ -63,8 +63,8 @@ const products = [
         type: "chaussures",
         price: 1299,
         description: "Chaussures en cuir noir élégantes",
-        image: "./images/chaussur-cur-noir.jpeg",
-        images: ["./images/chaussur-cur-noir.jpeg", "./images/Shoes _ Closed.jpeg"]
+        image: "./images/chaussures/chaussur-cur-noir.jpeg",
+        images: ["./images/chaussures/chaussur-cur-noir.jpeg", "./images/chaussures/NewDenBer Men's Moccasin Slippers Warm Memory Foam Suede Soft Plush Lined Slip on Indoor Outdoor House Shoes.jpeg"]
     },
     {
         id: 7,
@@ -74,8 +74,8 @@ const products = [
         type: "chaussures",
         price: 499,
         description: "Pantoufles d'été respirantes pour hommes",
-        image: "./images/Pantoufles d'été respirantes pour hommes, pantoufles d'intérieur à fond épais, à la mode, 2024.jpeg",
-        images: ["./images/Pantoufles d'été respirantes pour hommes, pantoufles d'intérieur à fond épais, à la mode, 2024.jpeg", "./images/Sandales d'intérieur mode homme, sandales noires confortables à semelle épaisse en matériau EVA, antidérapantes, anti-odeurs et antibactériennes pour l'intérieur et l'extérieur (il est recommandé d'acheter une taille au-dessus pou.jpeg"]
+        image: "./images/chaussures/Pantoufles d'été respirantes pour hommes, pantoufles d'intérieur à fond épais, à la mode, 2024.jpeg",
+        images: ["./images/chaussures/Pantoufles d'été respirantes pour hommes, pantoufles d'intérieur à fond épais, à la mode, 2024.jpeg", "./images/chaussures/Sandales d'intérieur mode homme, sandales noires confortables à semelle épaisse en matériau EVA, antidérapantes, anti-odeurs et antibactériennes pour l'intérieur et l'extérieur (il est recommandé d'acheter une taille au-dessus pou.jpeg"]
     },
     {
         id: 8,
@@ -85,8 +85,8 @@ const products = [
         type: "chaussures",
         price: 599,
         description: "Pantoufles Moccasin confortables pour la maison",
-        image: "./images/NewDenBer Men's Moccasin Slippers Warm Memory Foam Suede Soft Plush Lined Slip on Indoor Outdoor House Shoes.jpeg",
-        images: ["./images/NewDenBer Men's Moccasin Slippers Warm Memory Foam Suede Soft Plush Lined Slip on Indoor Outdoor House Shoes.jpeg", "./images/Luxury Pam Slippers _Available to order _#homeofstylishandstatementpieces #menshoes #menslippersinlagos #mensfashion #creatorsearchinsights #eid2025.jpeg"]
+        image: "./images/enfants/NewDenBer Men's Moccasin Slippers Warm Memory Foam Suede Soft Plush Lined Slip on Indoor Outdoor House Shoes.jpeg",
+        images: ["./images/enfants/NewDenBer Men's Moccasin Slippers Warm Memory Foam Suede Soft Plush Lined Slip on Indoor Outdoor House Shoes.jpeg", "./images/enfants/Luxury Pam Slippers _Available to order _#homeofstylishandstatementpieces #menshoes #menslippersinlagos #mensfashion #creatorsearchinsights #eid2025.jpeg"]
     },
     {
         id: 9,
@@ -96,8 +96,8 @@ const products = [
         type: "chaussures",
         price: 699,
         description: "Sandales plateforme antidérapantes pour l'été",
-        image: "./images/Herren Hausschuhe Sommer rutschfeste lässige Sandalen Plattform Hausschuhe Indoor Badezimmer.jpeg",
-        images: ["./images/Herren Hausschuhe Sommer rutschfeste lässige Sandalen Plattform Hausschuhe Indoor Badezimmer.jpeg", "./images/Shoes _ Closed.jpeg"]
+        image: "./images/chaussures/Herren Hausschuhe Sommer rutschfeste lässige Sandalen Plattform Hausschuhe Indoor Badezimmer.jpeg",
+        images: ["./images/chaussures/Herren Hausschuhe Sommer rutschfeste lässige Sandalen Plattform Hausschuhe Indoor Badezimmer.jpeg", "./images/femmes/chaussure _ Closed.jpeg"]
     },
     {
         id: 10,
@@ -107,8 +107,8 @@ const products = [
         type: "chaussures",
         price: 999,
         description: "Pantoufles de luxe pour hommes",
-        image: "./images/Luxury Pam Slippers _Available to order _#homeofstylishandstatementpieces #menshoes #menslippersinlagos #mensfashion #creatorsearchinsights #eid2025.jpeg",
-        images: ["./images/Luxury Pam Slippers _Available to order _#homeofstylishandstatementpieces #menshoes #menslippersinlagos #mensfashion #creatorsearchinsights #eid2025.jpeg", "./images/NewDenBer Men's Moccasin Slippers Warm Memory Foam Suede Soft Plush Lined Slip on Indoor Outdoor House Shoes.jpeg"]
+        image: "./images/chaussures/Luxury Pam Slippers _Available to order _#homeofstylishandstatementpieces #menshoes #menslippersinlagos #mensfashion #creatorsearchinsights #eid2025.jpeg",
+        images: ["./images/chaussures/Luxury Pam Slippers _Available to order _#homeofstylishandstatementpieces #menshoes #menslippersinlagos #mensfashion #creatorsearchinsights #eid2025.jpeg", "./images/chaussures/NewDenBer Men's Moccasin Slippers Warm Memory Foam Suede Soft Plush Lined Slip on Indoor Outdoor House Shoes.jpeg"]
     },
     {
         id: 11,
@@ -118,7 +118,7 @@ const products = [
         type: "pantalons",
         price: 799,
         description: "Sweatpant confortable pour le sport et la détente",
-        image: "./images/SWEATPANT BABOA.jpeg"
+        image: "./images/enfants/SWEATPANT BABOA.jpeg"
     },
     {
         id: 12,
@@ -168,7 +168,7 @@ const products = [
         type: "tshirts",
         price: 299,
         description: "T-shirt coloré pour enfant",
-        image: "./images/robe-gris.jpg"
+        image: "./images/enfants/robe-gris.jpg"
     },
     {
         id: 17,
@@ -178,7 +178,7 @@ const products = [
         type: "chemises",
         price: 399,
         description: "Chemise élégante pour enfant",
-        image: "./images/pantalon3.jpeg"
+        image: "./images/enfants/pantalon3.jpeg"
     },
     {
         id: 18,
@@ -188,7 +188,7 @@ const products = [
         type: "accessoires",
         price: 899,
         description: "Sac à main élégant pour femme",
-        image: "./images/chaussur-cur-noir.jpeg"
+        image: "./images/accessoires/sac-main.jpeg"
     },
     {
         id: 19,
@@ -198,7 +198,7 @@ const products = [
         type: "accessoires",
         price: 199,
         description: "Casquette colorée pour enfant",
-        image: "./images/Pantoufles d'été respirantes pour hommes, pantoufles d'intérieur à fond épais, à la mode, 2024.jpeg"
+        image: "./images/accessoires/casquette-enfant.jpeg"
     },
     {
         id: 20,
@@ -208,7 +208,7 @@ const products = [
         type: "accessoires",
         price: 499,
         description: "Ceinture en cuir de qualité pour homme",
-        image: "./images/pantalon-kaki.jpg"
+        image: "./images/accessoires/ceinture-cuir.jpeg"
     },
     {
         id: 21,
@@ -230,7 +230,7 @@ const products = [
         type: "accessoires",
         price: 1299,
         description: "Montre élégante avec bracelet en acier inoxydable",
-        image: "./images/pantalon-jeans1.jpg"
+        image: "./images/accessoires/montre-elegante.jpeg"
     },
     {
         id: 23,
@@ -240,7 +240,7 @@ const products = [
         type: "accessoires",
         price: 599,
         description: "Collier en perles naturelles pour femme",
-        image: "./images/pantalon-jeans2.jpg"
+        image: "./images/accessoires/collier-perles.jpeg"
     },
     {
         id: 24,
@@ -250,7 +250,7 @@ const products = [
         type: "accessoires",
         price: 799,
         description: "Lunettes de soleil polarisées UV400",
-        image: "./images/pantalon-kaki.jpg"
+        image: "./images/accessoires/lunettes-soleil.jpeg"
     },
     {
         id: 25,
@@ -260,7 +260,7 @@ const products = [
         type: "accessoires",
         price: 399,
         description: "Écharpe en laine douce et chaude",
-        image: "./images/robe-gris.jpg"
+        image: "./images/accessoires/echarpe-laine.jpeg"
     },
     {
         id: 26,
@@ -270,7 +270,7 @@ const products = [
         type: "accessoires",
         price: 699,
         description: "Portefeuille en cuir véritable avec compartiments",
-        image: "./images/pantalon3.jpeg"
+        image: "./images/accessoires/portefeuille-cuir.jpeg"
     },
     {
         id: 26,
@@ -280,7 +280,7 @@ const products = [
         type: "accessoires",
         price: 449,
         description: "Boucles d'oreilles en argent sterling",
-        image: "./images/chaussur-cur-noir.jpeg"
+        image: "./images/accessoires/boucles-oreilles.jpeg"
     },
     {
         id: 27,
@@ -290,7 +290,7 @@ const products = [
         type: "accessoires",
         price: 549,
         description: "Chapeau Fedora classique en feutre",
-        image: "./images/Pantoufles d'été respirantes pour hommes, pantoufles d'intérieur à fond épais, à la mode, 2024.jpeg"
+        image: "./images/accessoires/chapeau-fedora.jpeg"
     },
     {
         id: 28,
@@ -300,7 +300,7 @@ const products = [
         type: "accessoires",
         price: 349,
         description: "Foulard en soie pure avec motifs élégants",
-        image: "./images/NewDenBer Men's Moccasin Slippers Warm Memory Foam Suede Soft Plush Lined Slip on Indoor Outdoor House Shoes.jpeg"
+        image: "./images/accessoires/foulard-soie.jpeg"
     },
     {
         id: 29,
@@ -310,7 +310,7 @@ const products = [
         type: "accessoires",
         price: 299,
         description: "Gants en cuir doublés pour l'hiver",
-        image: "./images/Herren Hausschuhe Sommer rutschfeste lässige Sandalen Plattform Hausschuhe Indoor Badezimmer.jpeg"
+        image: "./images/accessoires/gants-cuir.jpeg"
     },
     {
         id: 30,
@@ -320,7 +320,7 @@ const products = [
         type: "accessoires",
         price: 1199,
         description: "Sac bandoulière en cuir premium",
-        image: "./images/Luxury Pam Slippers _Available to order _#homeofstylishandstatementpieces #menshoes #menslippersinlagos #mensfashion #creatorsearchinsights #eid2025.jpeg"
+        image: "./images/accessoires/sac-bandouliere.jpeg"
     },
     {
         id: 31,
@@ -330,7 +330,7 @@ const products = [
         type: "accessoires",
         price: 249,
         description: "Cravate en soie avec motifs classiques",
-        image: "./images/SWEATPANT BABOA.jpeg"
+        image: "./images/accessoires/cravate-soie.jpeg"
     },
     {
         id: 32,
@@ -340,7 +340,7 @@ const products = [
         type: "accessoires",
         price: 199,
         description: "Broche vintage avec cristaux",
-        image: "./images/Shoes _ Closed.jpeg"
+        image: "./images/accessoires/broche-vintage.jpeg"
     },
     {
         id: 33,
@@ -350,7 +350,7 @@ const products = [
         type: "accessoires",
         price: 399,
         description: "Sac à dos coloré et résistant pour enfant",
-        image: "./images/pantalon-jeans1.jpg"
+        image: "./images/accessoires/sac-dos-enfant.jpeg"
     },
     {
         id: 34,
@@ -360,7 +360,7 @@ const products = [
         type: "accessoires",
         price: 149,
         description: "Bandeau coloré pour cheveux d'enfant",
-        image: "./images/pantalon-jeans2.jpg"
+        image: "./images/accessoires/bandeau-cheveux.jpeg"
     },
     {
         id: 35,
@@ -370,7 +370,7 @@ const products = [
         type: "accessoires",
         price: 399,
         description: "Boutons de manchette élégants en acier",
-        image: "./images/pantalon-kaki.jpg"
+        image: "./images/accessoires/boutons-manchette.jpeg"
     }
 ];
 
