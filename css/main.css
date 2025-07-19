@@ -44,7 +44,7 @@ body {
 
 .logo-img {
     height: 50px;
-    width: auto;
+    width: 130px;
     transition: all 0.3s ease;
     filter: drop-shadow(0 2px 4px rgba(0,0,0,0.1));
 }
@@ -320,7 +320,7 @@ body {
 .category-card {
     background-color: #fff;
     padding: 2rem;
-    border-radius: 10px;
+    border-radius: 0px;
     text-align: center;
     transition: transform 0.3s, box-shadow 0.3s;
     cursor: pointer;
