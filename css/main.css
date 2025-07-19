@@ -383,6 +383,18 @@ body {
     position: relative;
     overflow: hidden;
 }
+
+.product-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    object-position: center;
+    transition: transform 0.3s ease;
+}
+
+.product-image:hover img {
+    transform: scale(1.05);
+}
 .wishlist-icon {
     position: absolute;
     top: 15px;
@@ -1238,7 +1250,9 @@ footer {
 .main-image img {
     width: 100%;
     height: 100%;
-    object-fit: cover;
+    object-fit: contain;
+    object-position: center;
+    padding: 10px;
 }
 
 .wishlist-icon {
@@ -1283,7 +1297,9 @@ footer {
 .thumbnail img {
     width: 100%;
     height: 100%;
-    object-fit: cover;
+    object-fit: contain;
+    object-position: center;
+    padding: 5px;
 }
 
 .product-info-details {
