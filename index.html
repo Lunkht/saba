@@ -367,7 +367,7 @@
                     <script>
                         document.addEventListener('DOMContentLoaded', function() {
                             // Initialisation de la carte OpenStreetMap
-                            var map = L.map('map').setView([48.8566, 2.3522], 13); // Coordonnées de Paris
+                            var map = L.map('map').setView([9.549315, -13.674540], 13); // Coordonnées de Conakry, Guinée
                             
                             // Ajout de la couche de tuiles OpenStreetMap
                             L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
@@ -375,8 +375,8 @@
                             }).addTo(map);
                             
                             // Ajout d'un marqueur pour l'emplacement du magasin
-                            var marker = L.marker([48.8566, 2.3522]).addTo(map);
-                            marker.bindPopup("<b>Saba Planet</b><br>123 Rue de la Paix, 75001 Paris").openPopup();
+                            var marker = L.marker([9.549315, -13.674540]).addTo(map);
+                            marker.bindPopup("<b>Saba Planet</b><br>123 Rue de la Paix, Conakry").openPopup();
                         });
                     </script>
                 </div>
